@@ -1,13 +1,15 @@
-# 01. NAMING
+# 01. La importancia de los nombres
 
-## Ejemplos de variables mal escritas
+## El nombre debe revelar las intenciones
+
+### Ejemplos de variables mal escritas
 
 ```java
 int d; // tiempo transcurrido en días
 ```
 Este comentario es innecesario.
 
-## Ejemplos de variables bien escritas
+### Ejemplos de variables bien escritas
 
 ```java 
 int elapsedTimeinDays
@@ -18,7 +20,9 @@ int fileAgeInDays
 
 ## La función `getThem(List<int[]> theList)`
 
-## Variables que provocan desinformación
+## El problema de la desinformación voluntaria a través del nombrado
+
+### Variables que provocan desinformación
 
 ```java
 int hp, aix, sco; // Nombres de plataformas o variantes de Unix.
