@@ -1,7 +1,7 @@
 # Clean-Code-Course
 
 1. Introducción al Código Limpio
-[2. La importancia de los nombres](02-Naming/README.md)
+2. [La importancia de los nombres](02-Naming/README.md)
 3. Las funciones en el código limpio
 4. Documentando a través de comentarios
 5. Formato del código
