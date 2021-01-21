@@ -1,4 +1,4 @@
-# Clean-Code-Course
+# Curso de código limpio
 
 1. Introducción al Código Limpio
 2. [La importancia de los nombres](02-Naming/README.md)
