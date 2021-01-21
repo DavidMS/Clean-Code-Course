@@ -1,11 +1,14 @@
 #01. NAMING
+
 ##Ejemplos de variables mal escritas
+
 ```java
 int d; // tiempo transcurrido en días
 ```
 Este comentario es innecesario.
 
 ##Ejemplos de variables bien escritas
+
 ```java 
 int elapsedTimeinDays
 int daysSinceCreation
@@ -16,6 +19,7 @@ int fileAgeInDays
 ##La función `getThem(List<int[]> theList)`
 
 ##Variables que provocan desinformación
+
 ```java
 int hp, aix, sco; // Nombres de plataformas o variantes de Unix.
 HashSet accountList; // Es un set y se le llama list. Usar accountGroup, accounts...
@@ -27,6 +31,7 @@ int XYZControllerForEfficientStorageOfStrings;
 ```
 
 ##Distinciones con sentido
+
 ```java
 public static void copyChars(char a1[], char a2[]) {
     for(int i = 0; i < a1.lenght; i++) {
@@ -43,6 +48,7 @@ public static void copyChars(char source[], char destination[]) {
 ```
 
 ##Distinciones pobres
+
 `Product, ProductInfo, ProductData`
 
 `getActiveAccount(),  getActiveAccounts(), getActiveAccountInfo()`
@@ -69,6 +75,7 @@ class Customer {
 ```
 
 ##La longitud de un nombre debe corresponderse al tamaño de su ámbito
+
 ```java
 class NamesLenght {
     /**
