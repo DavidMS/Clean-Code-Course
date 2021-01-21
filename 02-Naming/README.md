@@ -1,13 +1,13 @@
-#01. NAMING
+# 01. NAMING
 
-##Ejemplos de variables mal escritas
+## Ejemplos de variables mal escritas
 
 ```java
 int d; // tiempo transcurrido en días
 ```
 Este comentario es innecesario.
 
-##Ejemplos de variables bien escritas
+## Ejemplos de variables bien escritas
 
 ```java 
 int elapsedTimeinDays
@@ -16,9 +16,9 @@ int daysSinceModification
 int fileAgeInDays
 ```
 
-##La función `getThem(List<int[]> theList)`
+## La función `getThem(List<int[]> theList)`
 
-##Variables que provocan desinformación
+## Variables que provocan desinformación
 
 ```java
 int hp, aix, sco; // Nombres de plataformas o variantes de Unix.
@@ -30,7 +30,7 @@ int XYZControllerForEfficientHandlingOfStrings;
 int XYZControllerForEfficientStorageOfStrings;
 ```
 
-##Distinciones con sentido
+## Distinciones con sentido
 
 ```java
 public static void copyChars(char a1[], char a2[]) {
@@ -47,7 +47,7 @@ public static void copyChars(char source[], char destination[]) {
 }
 ```
 
-##Distinciones pobres
+## Distinciones pobres
 
 `Product, ProductInfo, ProductData`
 
@@ -55,7 +55,7 @@ public static void copyChars(char source[], char destination[]) {
 
 No incluir el **tipo** de variable en el **nombre** de una variable.
 
-##Usar nombres que se puedan pronunciar
+## Usar nombres que se puedan pronunciar
 
 ```java
 import java.util.Date;
@@ -74,7 +74,7 @@ class Customer {
 }
 ```
 
-##La longitud de un nombre debe corresponderse al tamaño de su ámbito
+## La longitud de un nombre debe corresponderse al tamaño de su ámbito
 
 ```java
 class NamesLenght {
@@ -109,7 +109,7 @@ class NamesLenght {
 }
 ```
 
-##Nombres de clases
+## Nombres de clases
 
 **OK**
 
@@ -121,7 +121,7 @@ class NamesLenght {
 
 El nombre de una clase no debe ser un **verbo**
 
-##Nombres de métodos
+## Nombres de métodos
 
 Los métodos deben tener nombres de **verbo** como `postPayment, deletePage, save`
 
@@ -129,13 +129,13 @@ Al sobrecargar constructores, usar **métodos de factoría estáticos** con nomb
 
 `Complex fulcrumPoint = new Complex.FromRealNumber(23.0);`
 
-##Una palabra por concepto
+## Una palabra por concepto
 
 Es confuso usar `fetch, retrieve y get`
 
 Es confuso tener un controlador, un administrador y un manager en el mismo proyecto.
 
-##No usar juegos de palabras
+## No usar juegos de palabras
 
 Imagina que en un proyecto tienes un método en distintas clases que se llama add() y lo que hace es crear un nuevo valor,
 sumando o concatenando dos valores existentes.
@@ -145,23 +145,23 @@ por coherencia, ya que hay muhcas clases con un método add en el código, pero 
 
 En este caso deberíamos crear un método llamado insert o append.
 
-##Usar nombres de dominios de soluciones
+## Usar nombres de dominios de soluciones
 
 Términos informáticos, algoritmos, nombres de patrones.
 
 `AccountVisitor //Patrón Visitor`
 
-##Usar nombres de dominios de problemas
+## Usar nombres de dominios de problemas
 
 Separar los conceptos de dominio de soluciones y de problemas es parte del trabajo de un buen programador y diseñador.
 El código que tenga más relación con los conceptos del dominio de problemas tendrá nombres extraídos de dicho dominio.
 
-##Añadir contexto con sentido
+## Añadir contexto con sentido
 
 `accountAddress` y `customerAddress` son nombres perfectos como instancias de clase Address pero no sirven como nombres 
 de clase Address. Address podría refererise tb a MAC o URI. En este caso deberíamos usar PostalAddress como nombre de clase.
 
-##No añadir contextos innecesarios
+## No añadir contextos innecesarios
 
 Gas Station Deluxe. ¿Añadimos GSD como prefijo a todas las clases? No tiene ningún sentido. No añade info util.
 
