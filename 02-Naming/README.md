@@ -103,6 +103,7 @@ class NamesLenght {
 ```
 
 ##Nombres de clases
+
 **OK**
 
 `Customer, WikiPage, Account, AddressParser`
@@ -114,6 +115,7 @@ class NamesLenght {
 El nombre de una clase no debe ser un **verbo**
 
 ##Nombres de métodos
+
 Los métodos deben tener nombres de **verbo** como `postPayment, deletePage, save`
 
 Al sobrecargar constructores, usar **métodos de factoría estáticos** con nombres que describan los argumentos.
@@ -121,6 +123,7 @@ Al sobrecargar constructores, usar **métodos de factoría estáticos** con nomb
 `Complex fulcrumPoint = new Complex.FromRealNumber(23.0);`
 
 ##Una palabra por concepto
+
 Es confuso usar `fetch, retrieve y get`
 
 Es confuso tener un controlador, un administrador y un manager en el mismo proyecto.
@@ -136,19 +139,23 @@ por coherencia, ya que hay muhcas clases con un método add en el código, pero 
 En este caso deberíamos crear un método llamado insert o append.
 
 ##Usar nombres de dominios de soluciones
+
 Términos informáticos, algoritmos, nombres de patrones.
 
 `AccountVisitor //Patrón Visitor`
 
 ##Usar nombres de dominios de problemas
+
 Separar los conceptos de dominio de soluciones y de problemas es parte del trabajo de un buen programador y diseñador.
 El código que tenga más relación con los conceptos del dominio de problemas tendrá nombres extraídos de dicho dominio.
 
 ##Añadir contexto con sentido
+
 `accountAddress` y `customerAddress` son nombres perfectos como instancias de clase Address pero no sirven como nombres 
 de clase Address. Address podría refererise tb a MAC o URI. En este caso deberíamos usar PostalAddress como nombre de clase.
 
 ##No añadir contextos innecesarios
+
 Gas Station Deluxe. ¿Añadimos GSD como prefijo a todas las clases? No tiene ningún sentido. No añade info util.
 
 Mirar clase `RefactorHolic`
