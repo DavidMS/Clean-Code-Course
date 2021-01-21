@@ -8,6 +8,7 @@
    - Los conceptos del código limpio
    - Las diferencias teóricas del concepto
    - La Regla del Boy Scout y los principios del código limpio
+   
 [2. La importancia de los nombres](02-Naming/README.md)
     - El nombre debe revelar las intenciones
     - El problema de la desinformación involuntaria a través del nombrado
@@ -19,6 +20,7 @@
     - Juegos de palabras, un error a evitar
     - Nombrado de dominios de problemas y soluciones
     - Contextos innecesarios, una distracción a evitar
+    
 3. Las funciones en el código limpio
    - El tamaño de las funciones importa
    - La estructura de bloques y la indentación de las funciones
@@ -39,6 +41,7 @@
    - No te repitas (NRY)
    - La programación estructurada
    - Creación de funciones limpias
+   
 4. Documentando a través de comentarios
 5. Formato del código
 6. Los Objetos y otras estructuras de datos
