@@ -1,4 +1,4 @@
-# 01. La importancia de los nombres
+# 02. La importancia de los nombres
 
 ## El nombre debe revelar las intenciones
 
