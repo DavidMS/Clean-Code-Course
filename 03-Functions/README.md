@@ -6,7 +6,7 @@
 - La segunda regla es que deben ser todavía más pequeñas.
 - Las funciones deben tener una longitud aproximada de 20 líneas.
 
-```
+```java
 // Mirar los siguientes archivos
 LongFunctions.java, LongFunctionsFixed.java
 ```
@@ -41,9 +41,13 @@ El objetivo es que el código se lea como un texto de arriba a abajo.
 
 ## Cómo plantear de forma limpia los argumentos en las funciones
 
+El número ideal de argumentos para una función es cero. Después de uno (monádico) y dos (diádico). Siempre que sea posible, evite la presencia de tres argumentos (triádico). Más de tres argumentos (triádico). Más de tres argumentos (poliádico) requiere de una justificación especial.
+
 ## La programación funcional y las formas monádicas habituales
 
 ## Los argumentos de indicador
+
+Los argumentos de indicador son horribles. Indica que la función hace más de una cosa, algo si es true y otra cosa si es false.
 
 ## Planteando funciones diádicas
 
@@ -51,18 +55,125 @@ El objetivo es que el código se lea como un texto de arriba a abajo.
 
 ## Objetos y listas de argumentos
 
+```java
+Circle makeCircle(double x, double y, double radius);
+Circle makeCircle(Point center, double radius);
+```
+
+```java
+String.format("%s worked %.2f hours", name, hours);
+public String format(String format, Object... args);
+```
+
 ## La importancia de los verbos y las palabras clave
+
+En formato monádico, la función y el argumento deben formar un par de verbo y sustantivo.
+
+```java
+write(name);
+writeField(name); // Así indicamos que name es un field
+
+assertEquals(expected, actual);
+assertExpectedEquals(expected, actual); // Así indicamos el orden en el nombre
+```
 
 ## Los argumentos de salida de una función y sus efectos secundarios
 
+```java
+public class UserValidator {
+    
+    private Cryptographer cryptographer;
+    
+    public boolean checkPassword(String userName, String password) {
+        User user = UserGateway.findByName(userName);
+        if(user != User.NULL) {
+            String codePhrase = user.getPhraseEncodedByPassword();
+            String phrase = cryptographer.decrypt(codePhrase, password);
+            if("Valid Password".equals(phrase)) {
+                Session.initialize(); // NO DEBERÍA INICIALIZAR LA SESION
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
 ## Separación de consultas
+
+Las funciones deben hacer algo o responder a algo, pero no ambas cosas.
+
+```java
+// PROBLEMA
+appendFooter(s); --> Un argumento de entrada que en realidad es de salida.
+appendFooter(StringBuffer report); --> En la definición es mas claro, pero no es suficiente
+
+// SOLUCIÓN
+report.appendFooter(); --> Es más claro y conciso
+```
+
+```java
+public boolean set(String attribute, String value);
+
+if(set("username", "david")){...} // Es confuso. username === david o username = david
+
+if(attributeExists("username")) {
+    setAttribute("username", "david");    
+}
+```
 
 ## Una excepción, siempre mejor que un código de error
 
+Los códigos de error incumplen la separación de comandos de consulta. Hace que los comandos usados asciendan a expresiones en los predicados de las instrucciones if. Genera estructuras anidadas.
+
+```java
+// MAL
+if(deletePage(page) == E_OK) {
+    if(registry.deleteReference(page.name) == E_OK) {
+        logger.log("page deleted");    
+    } else {
+        logger.log("configKey not deleted");    
+    }
+}
+else {
+    logger.log("delete failed");
+    return E_ERROR;
+}
+
+// BIEN
+try {
+    deletePage(page);
+    registry.deleteReference(page.name);
+    configKeys.deleteKey(page.name.makeKey());
+} catch(Exception ex) {
+    logger.log(ex.getMessage());    
+}
+```
+
 ## La importancia de los bloques try/catch
+
+Las funciones deben hacer una cosa y el procesamiento de errores es una de ellas. Si una función incluye la palabra clave try, debe ser la primera de la función y  no debe hacer nada más después de los bloques try/catch/finally.
+
+```java
+try {
+    deletePageAndAllReferences(page);    
+} catch(Exception ex) {
+    logError(ex);    
+}
+
+private void deletePageAndAllReferences(Page page) throws Exception {
+    deletePage(page);
+    registry.deleteReference(page.name.makeKey());
+    configKeys.deleteKey(page.name.makeKey());
+}
+
+private void logError(Exception ex) { logger.log(ex.getMessage());}
+```
 
 ## NRY, No te repitas
 
 ## La programación estructurada
+
+Dijkstra afirma que todas las funciones y todos los bloques de una función deben tener una entrada y una salida. Aunque esto no es tan importante en el caso de funciones de tamaño reducido.
 
 ## Creación de funciones limpias
