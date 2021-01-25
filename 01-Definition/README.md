@@ -30,7 +30,33 @@ Los directores y comerciales nos exigen la información que necesitan para reali
 
 ## Los conceptos de código limpio
 
+**Bjarne Stroustrup, inventor de C++ y autor de The C++ Programming Language**
 
+> Me gusta que mi código sea elegante y eficaz. La lógica debe ser directa para evitar errores ocultos, las dependencias deben ser mínimas para facilitar el manenimiento, el procesamiento de errores completo y sujeto a una estrategia ariculada, y el rendimiento debe ser óptio para que los usuarios no tiendan a estropear el código con optimizaciones sin sentido. El código limpio hace bien una cosa.
+
+**Grady Booch, autor de Object Oriented Analysis and Design with Applications**
+
+> El código limpio es simple y directo. El código limpio se lee como un texto bien escrito. El código limpio no oculta la intención del diseñador sino que muestra nítidas abstracciones y líneas directas de control.
+
+**Big Dave Thomas, fundador de OTI, el padrino de la estrategia Eclipse**
+
+> El código limpio se puede leer y mejorar por parte de un programador que no sea su autor original. Tiene pruebas de unidad y de aceptación. Tiene nombres con sentido. Ofrece una y no varias formas de hacer algo. Sus dependencias son mínimas, se definen de forma explícita y ofrece una API clara y mínima. El código debe ser culto en función del lenguaje, ya que o toda la información necesaria se puede expresar de forma clara en el código.
+
+**Michael Feathers, autor de Working Effectively with Legacy Code**
+
+> Podría enumerar todas las cualidades del código limpio pero hay una principal que engloba a todas ellas. El código limpio siempre parece que ha sido escrito por alguien a quien le importa. No hay nada evidente que hacer para mejorarlo. El autor del código pensó en todos los aspectos posibles y si intentamos imaginar alguna mejora, volvemos al punto de partida y solo nos queda disfrutar del código que alguien a quien le importa realmente nos ha proporcionado.
+
+**Ron Jeffries, autor de Extreme Programming Installed y Extreme Programming Adventures in C#**
+
+> En los últimos años, comencé y pácticamente terminé con las reglas de código simple de Beck. En orden de prioridad, el código simple:
+> - Ejecuta todas las pruebas
+> - No contiene duplicados.
+> - Expresa todos los conceptos de diseño del sistema.
+> - Minimiza el número de entidades como clases, métodos, funciones y similares.
+
+**Ward Cunningham, inventor de Wiki, Fit y uno de los inventores de la programación eXtreme**
+
+> Sabemos que estamos trabajando con código limpio cuando cada rutina que leemos resulta ser lo que esperábamos. Se puede denominar código atracivo cuando el código hace que parezca que el lenguaje se ha creado para el problema en cuestión.
 
 ## Las diferencias teóricas del concepto
 
