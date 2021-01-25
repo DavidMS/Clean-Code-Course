@@ -1,6 +1,6 @@
 # Curso de código limpio
 
-1. Introducción al Código Limpio
+1. [Introducción al Código Limpio](01-Definition/README.md)
 2. [La importancia de los nombres](02-Naming/README.md)
 3. [Las funciones en el código limpio](03-Functions/README.md)
 4. Documentando a través de comentarios
