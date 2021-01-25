@@ -3,7 +3,7 @@
 1. [Introducción al Código Limpio](01-Definition/README.md)
 2. [La importancia de los nombres](02-Naming/README.md)
 3. [Las funciones en el código limpio](03-Functions/README.md)
-4. Documentando a través de comentarios
+4. [Documentando a través de comentarios](04-Comments/README.md)
 5. Formato del código
 6. Los Objetos y otras estructuras de datos
 7. El procesamiento correcto de Errores
