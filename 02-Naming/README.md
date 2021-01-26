@@ -187,8 +187,8 @@ El código que tenga más relación con los conceptos del dominio de problemas t
 `accountAddress` y `customerAddress` son nombres perfectos como instancias de clase Address pero no sirven como nombres 
 de clase Address. Address podría refererise también a MAC o URI. En este caso deberíamos usar PostalAddress como nombre de clase.
 
-ver `RefactorHolic.java`
-
 ## Contextos innecesarios, una distracción a evitar
 
 Gas Station Deluxe. ¿Añadimos GSD como prefijo a todas las clases? No tiene ningún sentido. No añade info util.
+
+## Ejercicio. Refactorizar `RefactorHolic.java`
