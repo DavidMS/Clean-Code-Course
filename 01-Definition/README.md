@@ -14,7 +14,7 @@ Preguntas
 
 ## Las consecuencias de un código incorrecto en términos económicos
 
-Se acaban creando dos proyectos y ambos son un desastre.
+El mantenimiento de un codebase incorrecto suele hacerse insostenible con el tiempo. Muchos proyectos llegan a un punto en el que la baja calidad del código hace que la compañia se planteé reiniciar el proyecto desde cero. Normalmente, no es posible abandonar el antiguo proyecto, mientras se inicia el nuevo, por lo que al final se suele acabar con dos proyectos a desarrollar y mantener a la vez, lo que aumenta terriblemente los costes. Por otro lado, el hecho de que el nuevo proyecto deba ir añadiendo nuevas funcionalidades a la vez que se desarrolla hace aumenta la presión y reduce los tiempos de entrega, por lo que es probable que el nuevo proyecto acabe también siendo un desastre en términos de calidad de código y volvamos al punto inicial. 
 
 ## La importancia de la actitud frente al cambio
 
@@ -32,19 +32,19 @@ Los directores y comerciales nos exigen la información que necesitan para reali
 
 **Bjarne Stroustrup, inventor de C++ y autor de The C++ Programming Language**
 
-> Me gusta que mi código sea elegante y eficaz. La lógica debe ser directa para evitar errores ocultos, las dependencias deben ser mínimas para facilitar el manenimiento, el procesamiento de errores completo y sujeto a una estrategia ariculada, y el rendimiento debe ser óptio para que los usuarios no tiendan a estropear el código con optimizaciones sin sentido. El código limpio hace bien una cosa.
+> Me gusta que mi código sea **elegante y eficaz**. La lógica debe ser directa para evitar errores ocultos, las **dependencias** deben ser **mínimas** para facilitar el manenimiento, el **procesamiento de errores completo** y sujeto a una estrategia articulada, y el rendimiento debe ser óptio para que los usuarios no tiendan a estropear el código con optimizaciones sin sentido. **El código limpio hace bien una cosa**.
 
 **Grady Booch, autor de Object Oriented Analysis and Design with Applications**
 
-> El código limpio es simple y directo. El código limpio se lee como un texto bien escrito. El código limpio no oculta la intención del diseñador sino que muestra nítidas abstracciones y líneas directas de control.
+> El código limpio es **simple y directo**. El código limpio **se lee como un texto bien escrito**. El código limpio **no oculta la intención del diseñador** sino que muestra nítidas abstracciones y líneas directas de control.
 
 **Big Dave Thomas, fundador de OTI, el padrino de la estrategia Eclipse**
 
-> El código limpio se puede leer y mejorar por parte de un programador que no sea su autor original. Tiene pruebas de unidad y de aceptación. Tiene nombres con sentido. Ofrece una y no varias formas de hacer algo. Sus dependencias son mínimas, se definen de forma explícita y ofrece una API clara y mínima. El código debe ser culto en función del lenguaje, ya que o toda la información necesaria se puede expresar de forma clara en el código.
+> El código limpio se puede **leer y mejorar por parte de un programador que no sea su autor original**. Tiene **pruebas de unidad y de aceptación**. Tiene **nombres con sentido**. Ofrece **una y no varias formas de hacer algo**. Sus dependencias son mínimas, se definen de forma explícita y ofrece una API clara y mínima. El código debe ser culto en función del lenguaje, ya que no toda la información necesaria se puede expresar de forma clara en el código.
 
 **Michael Feathers, autor de Working Effectively with Legacy Code**
 
-> Podría enumerar todas las cualidades del código limpio pero hay una principal que engloba a todas ellas. El código limpio siempre parece que ha sido escrito por alguien a quien le importa. No hay nada evidente que hacer para mejorarlo. El autor del código pensó en todos los aspectos posibles y si intentamos imaginar alguna mejora, volvemos al punto de partida y solo nos queda disfrutar del código que alguien a quien le importa realmente nos ha proporcionado.
+> Podría enumerar todas las cualidades del código limpio pero hay una principal que engloba a todas ellas. El código limpio siempre parece que ha sido escrito por alguien a quien le importa. **No hay nada evidente que hacer para mejorarlo**. El autor del código pensó en todos los aspectos posibles y si intentamos imaginar alguna mejora, volvemos al punto de partida y solo nos queda disfrutar del código que alguien a quien le importa realmente nos ha proporcionado.
 
 **Ron Jeffries, autor de Extreme Programming Installed y Extreme Programming Adventures in C#**
 
@@ -56,7 +56,7 @@ Los directores y comerciales nos exigen la información que necesitan para reali
 
 **Ward Cunningham, inventor de Wiki, Fit y uno de los inventores de la programación eXtreme**
 
-> Sabemos que estamos trabajando con código limpio cuando cada rutina que leemos resulta ser lo que esperábamos. Se puede denominar código atracivo cuando el código hace que parezca que el lenguaje se ha creado para el problema en cuestión.
+> Sabemos que estamos trabajando con código limpio cuando cada rutina que leemos resulta ser lo que esperábamos. Se puede denominar **código atracivo cuando el código hace que parezca que el lenguaje se ha creado para el problema en cuestión**.
 
 ## Las diferencias teóricas del concepto
 
