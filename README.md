@@ -1,4 +1,10 @@
-# Curso de código limpio
+# Código limpio
+
+## Objetivo
+
+Aprender y desarrollar las habilidades necesarias para crear aplicaciones Java mantenibles y extensibles. Conseguir bajo los estándares del código limpio y una serie de buenas prácticas de diseño y paradigmas, una mayor calidad del software.
+
+El objetivo no es proporcionar una formación científica y reglada sobre la mejor manera de programar. A diferencia de un curso para aprender un lenguaje de programación determinado, las enseñanzas de este curso no se basan en reglas definidas y universales, más bien, este curso pretende concienciar al alumno de la importancia de escribir código de calidad y fomentar el debate sobre cuál es la forma más apropiada de alcanzar este objetivo, generando código legible, mantenible, que aporte valor y haga más agradable tanto el trabajo propio como el de cualquier otro desarrollador que tenga que lidiar con el código desarrollado en un futuro.
 
 1. [Introducción al Código Limpio](01-Definition/README.md)
 2. [La importancia de los nombres](02-Naming/README.md)
