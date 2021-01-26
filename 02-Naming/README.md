@@ -20,6 +20,8 @@ int fileAgeInDays
 
 ## La función `getThem(List<int[]> theList)`
 
+**EJERCICIO 1.** Crear una versión de getThem() usando una clase custom como elementos de la lista de entrada.
+
 ## El problema de la desinformación voluntaria a través del nombrado
 
 ### Variables que provocan desinformación
@@ -191,6 +193,4 @@ de clase Address. Address podría refererise también a MAC o URI. En este caso 
 
 Gas Station Deluxe. ¿Añadimos GSD como prefijo a todas las clases? No tiene ningún sentido. No añade info util.
 
-## Ejercicio. 
-
-Refactorizar `RefactorHolic.java`
+**Ejercicio 2.** Refactorizar la clase `RefactorHolic`
