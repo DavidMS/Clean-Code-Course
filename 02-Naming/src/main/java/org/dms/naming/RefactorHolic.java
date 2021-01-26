@@ -23,7 +23,8 @@ public class RefactorHolic {
         System.out.println(guessMessage);
     }
 
+    /*
     private void printGuessStatisticsCustomClass(char candidate, int count) {
         GuessStatisticsMessage.make(candidate, count);
-    }
+    }*/
 }
