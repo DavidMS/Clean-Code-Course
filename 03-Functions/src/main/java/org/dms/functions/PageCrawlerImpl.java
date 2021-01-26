@@ -1,7 +1,8 @@
 package org.dms.functions;
 
-class PageCrawlerImpl {
+class PageCrawlerImpl implements PageCrawler {
 
+    @Override
     public WikiPagePath getFullPath(WikiPage wikiPage) {
         return new WikiPagePath();
     }

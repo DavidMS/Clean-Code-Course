@@ -7,9 +7,10 @@
 - Las funciones deben tener una longitud aproximada de 20 líneas.
 
 ```java
-// Mirar los siguientes archivos
-LongFunctions.java, LongFunctionsFixed.java
+LongFunctions.java
 ```
+
+**Ejercicio.** Refactorizar LongFunctions.java
 
 ## La estructura de bloques y la indentación de las funciones
 
@@ -37,13 +38,28 @@ El objetivo es que el código se lea como un texto de arriba a abajo.
 
 ## Las instrucciones de tipo Switch
 
+Clase `SwitchToRefactor`
+
+**Ejercicio.** Refactorizar la clase SwitchToRefactor.
+
 ## La importancia del nombrado de las funciones
+
+No tenga miedo a usar nombres largos o complejos. Es muy importante que el nombre de una función de una idea muy clara de lo que hace la función.
 
 ## Cómo plantear de forma limpia los argumentos en las funciones
 
-El número ideal de argumentos para una función es cero. Después de uno (monádico) y dos (diádico). Siempre que sea posible, evite la presencia de tres argumentos (triádico). Más de tres argumentos (triádico). Más de tres argumentos (poliádico) requiere de una justificación especial.
+El número ideal de argumentos para una función es cero. Después de uno (monádico) y dos (diádico). Siempre que sea posible, evite la presencia de tres argumentos (triádico). Más de tres argumentos (poliádico) requiere de una justificación especial.
 
 ## La programación funcional y las formas monádicas habituales
+
+Hay dos motivos principales para pasar un sólo argumento.
+
+1. Realizar una pregunta sobre el argumento `fileExists('myFile)`
+2. Modificar el argumento, transformarlo en otra cosa y devolverlo. `fileOpen('file')`
+
+Asegúrese de que la distinción entre ambos casos es clara.
+
+En el caso de que la función sea un evento, asegúrese de hacer la distinción con el segundo caso devolviendo void.
 
 ## Los argumentos de indicador
 
@@ -79,6 +95,8 @@ assertExpectedEquals(expected, actual); // Así indicamos el orden en el nombre
 
 ## Los argumentos de salida de una función y sus efectos secundarios
 
+¿Qué está mal en este método?
+
 ```java
 public class UserValidator {
     
@@ -90,7 +108,7 @@ public class UserValidator {
             String codePhrase = user.getPhraseEncodedByPassword();
             String phrase = cryptographer.decrypt(codePhrase, password);
             if("Valid Password".equals(phrase)) {
-                Session.initialize(); // NO DEBERÍA INICIALIZAR LA SESION
+                Session.initialize();
                 return true;
             }
         }
@@ -139,36 +157,15 @@ else {
     logger.log("delete failed");
     return E_ERROR;
 }
-
-// BIEN
-try {
-    deletePage(page);
-    registry.deleteReference(page.name);
-    configKeys.deleteKey(page.name.makeKey());
-} catch(Exception ex) {
-    logger.log(ex.getMessage());    
-}
 ```
+
+**Ejercicio.** Implementar el método anterior usando Excepciones.
 
 ## La importancia de los bloques try/catch
 
 Las funciones deben hacer una cosa y el procesamiento de errores es una de ellas. Si una función incluye la palabra clave try, debe ser la primera de la función y  no debe hacer nada más después de los bloques try/catch/finally.
 
-```java
-try {
-    deletePageAndAllReferences(page);    
-} catch(Exception ex) {
-    logError(ex);    
-}
-
-private void deletePageAndAllReferences(Page page) throws Exception {
-    deletePage(page);
-    registry.deleteReference(page.name.makeKey());
-    configKeys.deleteKey(page.name.makeKey());
-}
-
-private void logError(Exception ex) { logger.log(ex.getMessage());}
-```
+**Ejercicio.** Corregir el método anterior.
 
 ## NRY, No te repitas
 
@@ -177,3 +174,5 @@ private void logError(Exception ex) { logger.log(ex.getMessage());}
 Dijkstra afirma que todas las funciones y todos los bloques de una función deben tener una entrada y una salida. Aunque esto no es tan importante en el caso de funciones de tamaño reducido.
 
 ## Creación de funciones limpias
+
+**Ejercicio.** Completar la clase SetupTeardownIncluder
