@@ -191,4 +191,6 @@ de clase Address. Address podría refererise también a MAC o URI. En este caso 
 
 Gas Station Deluxe. ¿Añadimos GSD como prefijo a todas las clases? No tiene ningún sentido. No añade info util.
 
-## Ejercicio. Refactorizar `RefactorHolic.java`
+## Ejercicio. 
+
+Refactorizar `RefactorHolic.java`
