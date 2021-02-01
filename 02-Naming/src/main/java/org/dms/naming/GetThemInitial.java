@@ -21,4 +21,17 @@ public class GetThemInitial {
                 list1.add(x);
             return list1;
     }
+
+    private static final int STATUS_VALUE = 0;
+    private static final int FLAGGED = 4;
+
+    private static List<int[]> getFlaggedCells(List<int[]> gameBoard) {
+        List<Cell> flaggedCells = new ArrayList<>();
+        for(int[] cell: gameBoard) {
+            if(cell.isFlagged()) {
+                flaggedCells.add(cell);
+            }
+        }
+        return flaggedCells;
+    }
 }
