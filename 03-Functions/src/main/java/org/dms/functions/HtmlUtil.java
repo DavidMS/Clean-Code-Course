@@ -50,12 +50,4 @@ public class HtmlUtil {
         pageData.setContent(buffer.toString());
         return pageData.getHtml();
     }
-
-    public static String renderPageWithSetupsAndTeardownsCompact(PageData pageData, boolean isSuite) throws Exception {
-        if(isTestPage(pageData)) {
-            includeSetupAndTeardownPages(pageData, isSuite);
-        }
-        return pageData.getHtml();
-    }
-
 }
