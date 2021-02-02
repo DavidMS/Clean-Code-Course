@@ -1,6 +1,6 @@
 package org.dms.functions;
 
-public class LongFunctions {
+public class HtmlUtil {
 
     public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
         WikiPage wikiPage = pageData.getWikiPage();
@@ -48,6 +48,13 @@ public class LongFunctions {
             }
         }
         pageData.setContent(buffer.toString());
+        return pageData.getHtml();
+    }
+
+    public static String renderPageWithSetupsAndTeardownsCompact(PageData pageData, boolean isSuite) throws Exception {
+        if(isTestPage(pageData)) {
+            includeSetupAndTeardownPages(pageData, isSuite);
+        }
         return pageData.getHtml();
     }
 
