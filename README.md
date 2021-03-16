@@ -10,7 +10,7 @@ El objetivo no es proporcionar una formación científica y reglada sobre la mej
 2. [La importancia de los nombres](Sesion01/02-Naming/README.md)
 3. [Las funciones en el código limpio](Sesion02/03-Functions/README.md)
 4. [Documentando a través de comentarios](Sesion02/04-Comments/README.md)
-5. [Los Objetos y otras estructuras de datos](Sesion03/05-ObjectsAndStructures/OBJETOS Y ESTRUCTURAS DE DATOS.pptx)
+5. [Los Objetos y otras estructuras de datos](Sesion03/05-ObjectsAndStructures/OBJETOS_Y_ESTRUCTURAS_DE_DATOS.pptx)
 6. El procesamiento correcto de Errores
 7. Los límites de nuestro código
 8. Pruebas limpias
