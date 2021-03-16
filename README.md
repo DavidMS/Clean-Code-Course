@@ -12,14 +12,12 @@ El objetivo no es proporcionar una formación científica y reglada sobre la mej
 4. [Documentando a través de comentarios](Sesion 02/04-Comments/README.md)
 5. Los Objetos y otras estructuras de datos
 6. El procesamiento correcto de Errores
-8. Los límites de nuestro código
-9. Pruebas limpias]
-10. La organización de las clases
-11. Sistemas
-12. Diseños Emergentes
-13. La Concurrencia
-14. Argumentos
-15. JUnit y pruebas unitarias
-16. SerialDate: Refactorización
-17. Hablando de Síntomas y Heurística
-18. Introducción a la Arquitectura Limpia
+7. Los límites de nuestro código
+8. Pruebas limpias
+9. La organización de las clases
+10. Sistemas
+11. La Concurrencia
+12. Argumentos
+13. JUnit y pruebas unitarias
+14. Programación Funcional
+15. Patrones de Diseño
